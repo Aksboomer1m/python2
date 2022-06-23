@@ -1,0 +1,2 @@
+# python2
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/485afbc0972c4b1fbf0e77c0008a3ac2)](https://app.codacy.com/gh/Aksboomer1m/python2?utm_source=github.com&utm_medium=referral&utm_content=Aksboomer1m/python2&utm_campaign=Badge_Grade_Settings)
