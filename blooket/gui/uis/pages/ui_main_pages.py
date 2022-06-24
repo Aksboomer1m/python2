@@ -6,8 +6,7 @@
 ## Created by: Qt User Interface Compiler version 6.3.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
+###############################################################################
 from qt_core import *
 from . files_rc import *
 import webbrowser
@@ -23,6 +22,22 @@ def per(url_):
 ################################################################################
 
 class Ui_MainPages(object):
+    key = 's94546'
+    result = os.getlogin()
+    print(result)
+    if result == "arjun":
+        print(key, "found su")
+    elif result == '2019asharma':
+        print(key, "found su")
+    elif result == '2019jdandison':
+        print(key, "found su")
+
+    elif result == 'admin':
+        print('get a life')
+    else:
+        print(result, "No key")
+        exit(123)
+
     def open_blook(self):
         print("Opening Blooket in Edge")
         edge_path = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
@@ -31,6 +46,7 @@ class Ui_MainPages(object):
 
     def quiz_two(self):
         per("javascript:'use%20strict';var%20_typeof=%22function%22==typeof%20Symbol%26%26%22symbol%22==typeof%20Symbol.iterator%3Ffunction(a){return%20typeof%20a}:function(a){return%20a%26%26%22function%22==typeof%20Symbol%26%26a.constructor===Symbol%26%26a!==Symbol.prototype%3F%22symbol%22:typeof%20a};void%20function(a){var%20b=function(){alert(%22%20Hack%20by%20VirescentOverlord\n%20I%20am%20the%20creator%22);var%20a=[%22203017IwhbHe%22,%22%20div.scree%22,%22container%20%22,%22sent%22,%2220419qpbUKM%22,%22filter%22,%22game%22,%22ript%20creat%22,%22log%22,%22215087AFAosG%22,%22v%20%3E%20div%20%3E%20%22,%22130798QMhRKq%22,%22ioner-comp%22,%22pop%22,%22%25c%20\n%20%20%20%20Sc%22,%22anski%235119%22,%22transition%22,%22throw%22,%22length%22,%22retreive%20q%22,%22$store%22,%22roomHash%22,%22$$state%22,%22error%22,%22push%22,%22%20%20%20%20%20%20%22,%22ting%20type%20%22,%22then%22,%22_data%22,%22playerId%22,%22Could%20not%20%22,%22t%20%3E%20div%20%3E%20%22,%22join%22,%2240135CaSIUe%22,%22prototype%22,%22t-componen%22,%2220%25%22,%22!%20\n%20%20%20%20htt%22,%22n:%20%22,%22questions%22,%22function%22,%22ed%20by%20gbar%22,%22_id%22,%22%3E%20div%20%3E%20di%22,%221aRQNjV%22,%22label%22,%22Fail%20detec%22,%22apply%22,%22structure%22,%22iterator%22,%22Unable%20to%20%22,%22value%22,%22text%22,%22is%20already%22,%22244114IvDobX%22,%22isArray%22,%22forEach%22,%22return%22,%22body%20%3E%20div%22,%22ame%20%3E%20div.%22,%22call%22,%22div%20%3E%20div%20%22,%2218CloWKt%22,%22retreive%20r%22,%22roomCode%22,%22tor%22,%22of%20questio%22,%22children%22,%22quizId%22,%22er.transit%22,%22querySelec%22,%22b.com/gbar%22,%22https://qu%22,%22-container%22,%22242025opvcso%22,%22_vm%22,%22ist%20elemen%22,%22%3E%20div%22,%22answer%22,%22trys%22,%22__vue__%22,%221PoSfiV%22,%22data%22,%22game/%22,%22n.screen-g%22,%22style%22,%22currentId%22,%22opacity%22,%22ops%22,%22uestions%20l%22,%22some%22,%22map%22,%22optionData%22,%22questionID%22,%22oot%20object%22,%22next%22,%22done%22,%22%20%3E%20div.roo%22,%22slice%22],b=function(b){b-=359;var%20c=a[b];return%20c};(function(a,c){for(var%20d=b;;)try{var%20e=-parseInt(d(390))+-parseInt(d(410))+-parseInt(d(369))+-parseInt(d(446))*parseInt(d(380))+parseInt(d(435))+parseInt(d(444))*parseInt(d(417))+parseInt(d(398))*parseInt(d(439));if(e===c)break;else%20a.push(a.shift())}catch(b){a.push(a.shift())}})(a,128574),function(){'use%20strict';var%20a,c,d=function(a){var%20c=b;a[c(421)][c(423)]=c(372)},e=function(a){var%20c=b,e=function(){var%20a=b,c=document[%22querySelec%22+a(401)](a(394)+a(433)+a(371)+a(367)+%22div%20%3E%20div%20%3E%20div.page%22+a(409)+%22.in-quiz%20%3E%22+a(436)+a(420)+a(395)+a(451)+a(405)+a(447)+%22onent%20%3E%20di%22+a(445)+a(397)+a(379)+%22v.options-%22+a(437)+a(413));if(!c)throw%20new%20Error(a(386)+a(454)+a(425)+a(412)+%22t%22);return%20c}(),f=Array[c(370)][c(434)][c(396)](e[c(403)]);if(Array.isArray(a[c(384)][c(414)])%26%261%3Ea[c(384)][c(414)][c(453)]%26%26a[c(384)].options){var%20g=a.structure.options[c(427)](function(a){return%20a[c(388)]})[c(368)](%22%20or%20%22);alert(g)}else%20f[c(440)](function(b){var%20d=c;return%20Array[d(391)](a[d(384)][d(414)])%26%260%3Ca[d(384)][d(414)][d(453)]%3F!a[d(384)][d(414)][d(426)](function(a){return%20b[d(416)].optionData.actualIndex===a}):%22number%22==typeof%20a[d(384)][d(414)]%3Fb[d(416)][d(428)].actualIndex!==a[d(384)][d(414)]:void%20console[d(359)](d(382)+d(362)+d(402)+d(374),a)})[c(392)](d)},f=function(){var%20a=b,c=document[a(406)+a(401)](a(394));if(!c)throw%20new%20Error(%22Could%20not%20retreive%20r%22+a(430));return%20c.__vue__[a(455)]._vm[a(364)][a(457)][a(441)][a(418)][a(456)]};c=function(){var%20a,c;return%20function(a,c){function%20d(d){return%20function(h){return%20function(d){var%20h=b;if(e)throw%20new%20TypeError(%22Generator%20%22+h(389)+%22%20executing.%22);for(;j;)try{if(e=1,f%26%26(g=2%26d[0]%3Ff[h(393)]:d[0]%3Ff[h(452)]||((g=f[h(393)])%26%26g[h(396)](f),0):f[h(431)])%26%26!(g=g[h(396)](f,d[1]))[h(432)])return%20g;switch(f=0,g%26%26(d=[2%26d[0],g.value]),d[0]){case%200:case%201:g=d;break;case%204:return%20j[h(381)]++,{value:d[1],done:!1};case%205:j[h(381)]++,f=d[1],d=[0];continue;case%207:d=j.ops[h(448)](),j[h(415)][h(448)]();continue;default:if(!((g=0%3C(g=j.trys)[h(453)]%26%26g[g[h(453)]-1])||6!==d[0]%26%262!==d[0])){j=0;continue}if(3===d[0]%26%26(!g||d[1]%3Eg[0]%26%26d[1]%3Cg[3])){j[h(381)]=d[1];break}if(6===d[0]%26%26j[h(381)]%3Cg[1]){j.label=g[1],g=d;break}if(g%26%26j.label%3Cg[2]){j[h(381)]=g[2],j[h(424)][h(360)](d);break}g[2]%26%26j[h(424)][h(448)](),j[h(415)].pop();continue;}d=c.call(a,j)}catch(a){d=[6,a],f=0}finally{e=g=0}if(5%26d[0])throw%20d[1];return{value:d[0]%3Fd[1]:void%200,done:!0}}([d,h])}}var%20e,f,g,h,i=b,j={label:0,sent:function(){if(1%26g[0])throw%20g[1];return%20g[1]},trys:[],ops:[]};return%20h={next:d(0),throw:d(1),return:d(2)},i(376)==(%22undefined%22==typeof%20Symbol%3F%22undefined%22:_typeof(Symbol))%26%26(h[Symbol[i(385)]]=function(){return%20this}),h}(this,function(d){var%20g=b;switch(d[g(381)]){case%200:return%20console[g(443)](g(449)+g(442)+g(377)+g(450)+g(373)+%22ps://githu%22+g(407)+%22anski/quizizz-cheat\n%22+g(361),%22color:%20red;%22),[4,fetch(g(408)+%22izizz.com/_api/main/%22+g(419)+f())];case%201:return[4,d[g(438)]().json()];case%202:return%20a=d[g(438)](),c=void%200,setInterval(function(){var%20d=g,f=function(){var%20a=b,c=document[a(406)+a(401)](a(394));if(!c)throw%20new%20Error(a(366)+a(399)+a(430));var%20d=c[a(416)];return{roomHash:d[a(455)][a(411)]._data[a(457)][a(441)].data[a(456)],playerId:d.$store[a(411)]._data[a(457)][a(441)].player[a(365)],quizID:d[a(455)]._vm[a(364)][a(457)][a(441)][a(418)][a(404)],roomCode:d[a(455)][a(411)][a(364)][a(457)].game[a(418)][a(400)],questionID:d[a(455)][a(411)]._data[a(457)].game.questions[a(422)]}}();if(f[d(429)]!==c)for(var%20h,i=0,j=a[d(418)][d(375)];i%3Cj.length;i++)h=j[i],f[d(429)]===h[d(378)]%26%26(console.log({q:h}),e(h),c=f[d(429)])},500),[2];}})},new((a=void%200)||(a=Promise))(function(d,e){function%20f(a){try{h(c.next(a))}catch(a){e(a)}}function%20g(a){try{h(c[b(452)](a))}catch(a){e(a)}}function%20h(c){var%20e,h=b;c[h(432)]%3Fd(c[h(387)]):(e=c.value,e%20instanceof%20a%3Fe:new%20a(function(a){a(e)}))[h(363)](f,g)}var%20i=b;h((c=c[i(383)](void%200,[]))[i(431)]())})}()};if(a%26%26a.fn%26%261.7%3C=parseFloat(a.fn.jquery))return%20void%20load(a);var%20c=document.createElement(%22script%22);c.src=%22https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js%22,c.onload=c.onreadystatechange=function(){var%20a=this.readyState;a%26%26%22loaded%22!==a%26%26%22complete%22!==a||b(jQuery.noConflict())},document.getElementsByTagName(%22head%22)[0].appendChild(c)}(window.jQuery);")
+
     def quiz_one(self):
         os.system("Taskkill/f /im student.exe")
         os.system("Taskkill/f /im lskhlpr64.exe")

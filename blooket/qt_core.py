@@ -14,11 +14,30 @@ from PySide6.QtGui import *
 from PySide6.QtWidgets import *
 from PySide6.QtSvgWidgets import *
 import os, sys
+
+
 def install():
-    os.system('python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-    os.system('python.exe -m pip uninstall pyqt5designer')
-    os.system('python.exe -m pip install webbrowser --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+    os.system(
+        'python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+    os.system(
+        'python.exe -m pip install webbrowser --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
     os.system('python.exe -m pip install pyside6 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-    os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-    os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-    os.system('python.exe -m pip install beautifulsoup4 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+    os.system(
+        'python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+
+
+key = 's94546'
+result = os.getlogin()
+print(result)
+if result == "arjun":
+    print(key, "found su")
+elif result == '2019asharma':
+    print(key, "found su")
+elif result == '2019jdandison':
+    print(key, "found su")
+
+elif result == 'admin':
+    print('get a life')
+else:
+    print(result, "No key")
+    exit(123)

@@ -1,25 +1,35 @@
 import os, sys
-import subprocess
-os.system('python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip uninstall pyqt5designer')
-os.system('python.exe -m pip install webbrowser --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyside6 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
 
+test_names = """
+import subprocess
 result = subprocess.check_output("whoami")
 r = str(result)
 key = 's94546'
 print(result)
-if 'arjun' in r:
-    print(key)
-elif '2019ASharma':
-    print(key)
-elif 'admin':
+names = ['arjun', '2019asharma']"""
+key = 's94546'
+result = os.getlogin()
+print(result)
+if result == "arjun":
+    print(key, "found su")
+elif result == '2019asharma':
+    print(key, "found su")
+elif result == '2019jdandison':
+    print(key, "found su")
+
+elif result == 'admin':
     print('get a life')
 else:
     print(result, "No key")
+    exit(123)
 
+################################################################################################################################
+os.system(
+    'python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+os.system('python.exe -m pip install pyside6 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+####################################################
 # IMPORT PACKAGES AND MODULES
 # ///////////////////////////////////////////////////////////////
 from gui.uis.windows.main_window.functions_main_window import *
