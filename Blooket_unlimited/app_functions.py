@@ -15,7 +15,7 @@
 ################################################################################
 
 ## ==> GUI FILE
-from main import *
+from Blooket_unlimited.main import *
 
 class Functions(MainWindow):
     pass

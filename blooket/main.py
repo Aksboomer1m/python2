@@ -1,56 +1,177 @@
+# Error code 123 = login error
+# Error code 10 = Import error / restart
+# Error code 0 = App closed
+#
+#
+#
+#
+#
+#
 import os, sys
-
-test_names = """
 import subprocess
-result = subprocess.check_output("whoami")
-r = str(result)
-key = 's94546'
-print(result)
-names = ['arjun', '2019asharma']"""
 key = 's94546'
 result = os.getlogin()
 print(result)
 if result == "arjun":
     print(key, "found su")
+elif result == '2019ASharma':
+    print(key, "found su")
 elif result == '2019asharma':
+    print(key, "found su")
+elif result == 'admin':
+    print('get a life')
+elif result == '2019HLegg':
+    print(key, "found su")
+elif result == '2019hlegg':
+    print(key, "found su")
+elif result == '2019Hlegg':
+    print(key, "found su")
+elif result == '2019JDandison':
     print(key, "found su")
 elif result == '2019jdandison':
     print(key, "found su")
-
-elif result == 'admin':
-    print('get a life')
+elif result == '2019Jdandison':
+    print(key, "found su")
 else:
     print(result, "No key")
     exit(123)
+reslt = subprocess.check_output(
+    f'C:/Users/{result}/AppData/Local/Programs/Python/Python37/python.exe -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+    stdin=None, stderr=None, shell=False, universal_newlines=True)
+reslt2 = subprocess.check_output(
+    f'python.exe -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+    stdin=None, stderr=None, shell=False, universal_newlines=True)
+reslt3 = subprocess.check_output(
+    f'python -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+    stdin=None, stderr=None, shell=False, universal_newlines=True)
+reslt4 = subprocess.check_output(
+    f'pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+    stdin=None, stderr=None, shell=False, universal_newlines=True)
+re = str(reslt)
+print(re)
+re1 = str(reslt2)
+print(re1)
+re2= str(reslt3)
+print(re2)
+re3 = str(reslt4)
+print(re3)
+# 1
+if re == f'Requirement already satisfied: pip in c:\\users\\{result}\\appdata\\roaming\\python\\python37\\site-packages (22.1.2)\n':
+    print('found')
+    instance = f'C:/Users/{result}/AppData/Local/Programs/Python/Python37/python.exe -m '
+else:
+    print('incorrect method')
+    reslt = subprocess.check_output(
+        f'python.exe -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+        stdin=None, stderr=None, shell=False, universal_newlines=True)
+    re = str(reslt)
+    # 2
+    print(re)
+    if re == f'Requirement already satisfied: pip in c:\\users\\{result}\\appdata\\roaming\\python\\python37\\site-packages (22.1.2)\n':
+        print('found')
+        instance = f'python.exe -m '
+    else:
+        print('incorrect method')
+        reslt = subprocess.check_output(
+            f'python -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+            stdin=None, stderr=None, shell=False, universal_newlines=True)
+        re = str(reslt)
+        print(re)
+        # 3
+        if re == f'Requirement already satisfied: pip in c:\\users\\{result}\\appdata\\roaming\\python\\python37\\site-packages (22.1.2)\n':
+            print('found')
+            instance = f'python -m '
+        else:
+            print('incorrect method')
+            reslt = subprocess.check_output(
+                f'python -m pip install --user --upgrade pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location',
+                stdin=None, stderr=None, shell=False, universal_newlines=True)
+            re = str(reslt)
+            # 4
+            print(re)
+            if re == f'Requirement already satisfied: pip in c:\\users\\{result}\\appdata\\roaming\\python\\python37\\site-packages (22.1.2)\n':
+                print('found')
+                instance = f''
+            else:
+                print('incorrect method')
+try:
+    import pyperclip
+except ImportError as o:
+    print('not installed')
+    os.system(f'{instance}pip uninstall pyside6')
+    os.system(f'{instance}pip uninstall pillow')
+    os.system(f'{instance}pip uninstall pyperclip')
+    os.system(f'{instance}pip install --user --upgrade pip  --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location')
+    os.system(f'{instance}pip install --user pyside6  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+    os.system(f'{instance}pip install --user pillow  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+    os.system(f'{instance}pip install --user pyperclip  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+try:
+    # IMPORT PACKAGES AND MODULES
+    # ///////////////////////////////////////////////////////////////
+    from gui.uis.windows.main_window.functions_main_window import *
 
-################################################################################################################################
-os.system(
-    'python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyside6 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-####################################################
-# IMPORT PACKAGES AND MODULES
-# ///////////////////////////////////////////////////////////////
-from gui.uis.windows.main_window.functions_main_window import *
+    # IMPORT QT CORE
+    # ///////////////////////////////////////////////////////////////
+    from qt_core import *
+    import pyperclip
 
-# IMPORT QT CORE
-# ///////////////////////////////////////////////////////////////
-from qt_core import *
+    # IMPORT SETTINGS
+    # ///////////////////////////////////////////////////////////////
+    from gui.core.json_settings import Settings
 
-# IMPORT SETTINGS
-# ///////////////////////////////////////////////////////////////
-from gui.core.json_settings import Settings
+    # IMPORT PY ONE DARK WINDOWS
+    # ///////////////////////////////////////////////////////////////
+    # MAIN WINDOW
+    from gui.uis.windows.main_window import *
 
-# IMPORT PY ONE DARK WINDOWS
-# ///////////////////////////////////////////////////////////////
-# MAIN WINDOW
-from gui.uis.windows.main_window import *
+    # IMPORT PY ONE DARK WIDGETS
+    # ///////////////////////////////////////////////////////////////
+    from gui.widgets import *
+    from gui.uis.pages.files_rc import *
 
-# IMPORT PY ONE DARK WIDGETS
-# ///////////////////////////////////////////////////////////////
-from gui.widgets import *
+    # IMPORT MATERIALS
+    # //////////////////////////////////////////////////////////////
+    from gui.uis.pages.files_rc import *
 
+except ImportError as ie:
+    print(f"Well an error has occured: {ie} \nPress enter to reinstall if 'n' is present it will stop")
+    a = input()
+    if a == 'n':
+        print('wow')
+    elif a == 'N':
+        print('wow')
+    else:
+        ################################################################################################################################
+        try:
+            import os
+
+            os.system(
+                f'{instance}pip uninstall pyside6')
+
+            os.system(
+                f'{instance}pip uninstall pillow')
+
+            os.system(
+                f'{instance}pip uninstall pyperclip')
+
+            os.system(
+                f'{instance}pip install --user --upgrade pip  --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location')
+
+            os.system(
+                f'{instance}pip install --user pyside6  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+
+            os.system(
+                f'{instance}pip install --user pillow  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+
+            os.system(
+                f'{instance}pip install --user pyperclip  --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+        except OSError as osio:
+            print(
+                f'Os issue: {osio}')
+
+        exit(10)
+        ####################################################################################################################################################################################
+login(True, True)
 # ADJUST QT FONT DPI FOR HIGHT SCALE AN 4K MONITOR
 # ///////////////////////////////////////////////////////////////
 os.environ["QT_FONT_DPI"] = "96"
@@ -60,6 +181,7 @@ os.environ["QT_FONT_DPI"] = "96"
 
 # MAIN WINDOW
 # ///////////////////////////////////////////////////////////////
+# noinspection PyTypeChecker
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -158,11 +280,16 @@ class MainWindow(QMainWindow):
     def resizeEvent(self, event):
         SetupMainWindow.resize_grips(self)
 
+    def resizeFunction(self):
+        print('Height: ' + str(self.height()) + ' | Width: ' + str(self.width()))
+
     # MOUSE CLICK EVENTS
     # ///////////////////////////////////////////////////////////////
     def mousePressEvent(self, event):
-        # SET DRAG POS WINDOW
-        self.dragPos = event.globalPos()
+        p = event.globalPosition()
+        globalPos = p.toPoint()
+        self.dragPos = globalPos
+        print(p)
 
 
 # SETTINGS WHEN TO START
@@ -171,10 +298,9 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     # APPLICATION
     # ///////////////////////////////////////////////////////////////
-    app = QApplication(sys.argv)
+    app = QApplication()
     app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
-
     # EXEC APP
     # ///////////////////////////////////////////////////////////////
     sys.exit(app.exec())

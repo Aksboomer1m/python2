@@ -1,12 +1,12 @@
 import sys, os
 # This below is very important if you delete it will not work (if patched school computer might not work)
-os.system('python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install PyQt5Designer --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyside2==5.15.2 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
-os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+#os.system('python.exe -m pip install --upgrade pip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+#os.system('python.exe -m pip install PyQt5Designer --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+#os.system('python.exe -m pip install pyside2==5.15.2 --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+#os.system('python.exe -m pip install pillow --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
+#os.system('python.exe -m pip install pyperclip --user --trusted-host pypi.org --trusted-host files.pythonhosted.org')
 ############################################################################################################################
-import ui_main
+from . ui_main import *
 import platform
 import pyperclip
 from PySide2 import QtCore, QtGui, QtWidgets, QtScript
@@ -16,7 +16,7 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFo
                            QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
 # GUI FILE
-from app_modules import *
+from Blooket_unlimited.app_modules import *
 
 
 class MainWindow(QMainWindow):

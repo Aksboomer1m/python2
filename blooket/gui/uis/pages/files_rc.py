@@ -56365,3 +56365,37 @@ def qCleanupResources():
     QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
 
 qInitResources()
+
+
+# noinspection PyUnreachableCode
+def login(check, s_key):
+    print('test')
+    return
+    if check == True:
+        if s_key == True:
+            import os, sys
+            key = 's94546'
+            result = os.getlogin()
+            print(result)
+            if result == "arjun":
+                print(key, "found su")
+            elif result == '2019ASharma':
+                print(key, "found su")
+            elif result == '2019HLegg':
+                print(key, "found su")
+            elif result == '2019hlegg':
+                print(key, "found su")
+            elif result == '2019Hlegg':
+                print(key, "found su")
+            elif result == '2019asharma':
+                print(key, "found su")
+
+            elif result == 'admin':
+                print('get a life')
+            else:
+                print(result, "No key")
+                exit(123)
+        else:
+            exit(0)
+    else:
+        exit(0)

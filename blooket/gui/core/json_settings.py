@@ -42,3 +42,4 @@ class Settings(object):
         with open(self.settings_path, "r", encoding='utf-8') as reader:
             settings = json.loads(reader.read())
             self.items = settings
+
